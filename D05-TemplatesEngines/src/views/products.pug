@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sandstone/bootstrap.min.css", integrity="sha384-zEpdAL7W11eTKeoBJK1g79kgl9qjP7g84KfK3AZsuonx38n8ad+f5ZgXtoSDxPOh", crossorigin="anonymous")
+    body(style={background:"rgb(30, 30, 40)"})
+        a(class="btn btn-danger m-3" href="http://localhost:8080/")="Add product"
+        h1(class="text-center text-white mt-5 mb-5")= "Products view"
+        if error 
+            p(class="alert alert-warning h3 text-center text-white")=msg
+        else 
+           
+                table(class="table table-bordered table-danger") 
+                    thead
+                        tr
+                            th(class="h4 text-center text-dark")="key"
+                            th(class="h4 text-center text-dark")="Title"
+                            th(class="h4 text-center text-dark")="Price"
+                    tbody 
+                        each product, key in products
+                            tr
+                                th(scope='row' class="h6 text-center text-dark")=key
+                                td(class="h6 text-center text-dark")=product.title
+                                td(class="h6 text-center text-dark")="$ "+product.price

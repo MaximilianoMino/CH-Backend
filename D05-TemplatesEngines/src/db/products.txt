@@ -1,0 +1,8 @@
+[
+    {
+        "title": "Camion",
+        "price": "500",
+        "thumbnail": "https://media.istockphoto.com/vectors/black-vintage-pickup-truck-with-pumpkins-vector-vector-id1270164314?b=1&k=6&m=1270164314&s=170x170&h=xMP6ZtDgk0NB4J22wOWTs5W8XaMinZiC4VK2Xruh_u4=",
+        "id": 1643954561851
+    }
+]

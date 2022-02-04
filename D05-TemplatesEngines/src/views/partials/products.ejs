@@ -1,0 +1,24 @@
+<%- include("./head.ejs", {variant: "compact"}) %>
+
+<div>
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr class="text-white text-center">
+        <th>#</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% products.forEach(function(product) { %>
+
+      <tr class="table-danger text-center">
+        <th scope="row">1</th>
+        <td><%= product.title %></td>
+        <td><%= product.price %></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>

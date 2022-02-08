@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Camioncito",
+        "price": "500",
+        "thumbnail": "https://www.iconfinder.com/iconsets/street-food-and-food-trucker-1",
+        "id": 1643834716997
+    },
+    {
+        "title": "Motoneta",
+        "price": "1500",
+        "thumbnail": "https://www.iconfinder.com/iconsets/street-food-and-food-trucker-1",
+        "id": 1643834790077
+    }
+]

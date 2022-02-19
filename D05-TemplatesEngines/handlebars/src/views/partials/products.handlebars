@@ -1,0 +1,21 @@
+<h1 class="text-center text-white mt-5 mb-5">Vista de productos</h1>
+
+<table class="table table-bordered table-sm text-white mb-5">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>{{#each products as |value key|}}
+      <tr class="table-danger text-dark">
+
+        <th scope="row">{{key}}</th>
+        <td> {{value.title}}</td>
+        <td>$ {{value.price}}</td>
+      </tr>
+    {{/each}}
+
+  </tbody>
+</table>
